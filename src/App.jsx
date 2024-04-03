@@ -1,9 +1,9 @@
+import { Header } from "./componnents/header"
+
 function App() {
 
   return (
-    <>
-      <h1>App</h1>
-    </>
+    <Header />
   )
 }
 
