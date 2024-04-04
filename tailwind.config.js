@@ -12,7 +12,6 @@ export default {
         "Bright-Red": "hsl(356, 69%, 56%)",
         "Facebook": "hsl(208, 92%, 53%)",
         "Twitter": "hsl(203, 89%, 53%)",
-        "Instagram": "linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)",
         "YouTube": "hsl(348, 97%, 39%)",
         "Toggle": "hsl(230, 22%, 74%)",
         "Very-Dark-Blue": "hsl(230, 17%, 14%)",
