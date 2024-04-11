@@ -22,14 +22,14 @@ const netWorkColors = {
 
 export const OverviewCard = ({user, audienceType, audience, network, isUp, today}) => {
   return (
-    <article className='bg-Light-Grayish-Blue w-[326px] h-[216px] mb-4 rounded-[5px] mx-auto overflow-hidden text-center'>
+    <article className='bg-Light-Grayish-Blue w-[326px] h-[216px] mb-4 rounded-[5px] mx-auto overflow-hidden text-center dark:bg-Dark-Desaturated-Blue hover:brightness-95 cursor-pointer hover:dark:brightness-125'>
         <div className={`${netWorkColors[network]} h-[4px] mb-8`}></div>
         <div className='flex items-center place-content-center gap-2'>
             <img src={netWorkLogos[network]} alt={`Logo de ${network}`} />
             <p className='text-xs text-Dark-Grayish-Blue font-bold'>{user}</p>
         </div>
     
-        <p className='text-[56px] font-bold text-Very-Dark-Blue'>{audience}</p>
+        <p className='text-[56px] font-bold text-Very-Dark-Blue dark:text-White'>{audience}</p>
         <p className='uppercase tracking-[5px] text-Dark-Grayish-Blue text-xs mb-6'>{audienceType}</p>
         <div className='flex items-center place-content-center gap-1 '>
           <img src={isUp ? iconUp : iconDown} alt="Icon arrow" />
