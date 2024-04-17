@@ -1,5 +1,5 @@
 import { Header } from "./componnents/header"
-import { OverviewContainer } from "./componnents/overview"
+import { OverviewContainer, OverviewTodayContainer } from "./componnents/overview"
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
     <>
     <Header />
     <OverviewContainer />
+    <OverviewTodayContainer/>
     </>
   )
 }

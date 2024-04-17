@@ -5,6 +5,7 @@ import instagramkLogo from '../assets/images/icon-instagram.svg'
 import youtubeLogo from '../assets/images/icon-youtube.svg'
 import iconUp from '../assets/images/icon-up.svg'
 import iconDown from '../assets/images/icon-down.svg'
+import { data } from 'autoprefixer'
 
 const netWorkLogos = {
     Facebook: facebookLogo,
@@ -35,6 +36,26 @@ export const OverviewCard = ({user, audienceType, audience, network, isUp, today
           <img src={isUp ? iconUp : iconDown} alt="Icon arrow" />
           <p className={`text-xs font-bold ${isUp ? 'text-Lime-Green' : 'text-Bright-Red'}`}>{today} Today</p>
         </div>
+    </article>
+  )
+}
+
+
+export const OverviewTodayCard = ({network, statsType, stats, porcentage, isUp}) => {
+  return (
+    <article className='bg-Light-Grayish-Blue w-[326px] h-[125px] mb-4 mx-auto rounded-[5px] p-[27px] cursor-pointer dark:bg-Dark-Desaturated-Blue hover:brightness-95 hover:dark:brightness-125'>
+      <div className='flex items-center justify-between'>
+        <p className='text-Dark-Grayish-Blue'>{statsType}</p>
+        <img src={netWorkLogos[network]} alt=''/>
+      </div>
+      <div className='flex justify-between'>
+        <p className='text-[42px] font-bold text-Very-Dark-Blue dark:text-White'>{stats}</p>
+        <div className='flex items-center place-content-center gap-1'>
+          <img src={isUp ? iconUp : iconDown} alt="Icon arrow" />
+          <p className={`text-xs font-bold ${isUp ? 'text-Lime-Green' : 'text-Bright-Red'}`}>{porcentage} Today</p>
+        </div>
+        
+      </div>
     </article>
   )
 }
